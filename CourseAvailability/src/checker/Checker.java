@@ -23,10 +23,10 @@ public class Checker {
         driver.get("https://my.concordia.ca/psp/upprpr9/?cmd=login&languageCd=ENG&");
 
         // Find the text input element by its name
-        driver.findElement(By.id("userid")).sendKeys("v_duo");
+        driver.findElement(By.id("userid")).sendKeys("");
         //find password field and enter
         WebElement pw = driver.findElement(By.id("pwd"));
-        pw.sendKeys("Dung&Diem93");
+        pw.sendKeys("");
         pw.submit();
         
         //go to student center
