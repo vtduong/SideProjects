@@ -19,6 +19,7 @@ public class Checker {
         WebDriver driver = new ChromeDriver();
 
         //visit website
+        driver.manage().window().maximize();
         driver.get("https://my.concordia.ca/psp/upprpr9/?cmd=login&languageCd=ENG&");
 
         // Find the text input element by its name
@@ -33,7 +34,6 @@ public class Checker {
         
         //click on third enroll button
         driver.findElement(By.id("DERIVED_SSS_SCR_SSS_LINK_ANCHOR2")).click();
-        
         //select first term on the list and continue;
         driver.findElement(By.id("SSR_DUMMY_RECV1$sels$0$$0")).click();
         driver.findElement(By.id("DERIVED_SSS_SCT_SSR_PB_GO")).click();
