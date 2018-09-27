@@ -78,3 +78,8 @@ local.properties
 .cache-main
 .scala_dependencies
 .worksheet
+
+#ignore these folders
+jarFiles/
+game-data/
+RemoteSystemsTempFiles/
